@@ -33,6 +33,10 @@ h1 {
   background-color: #ff6745d4 !important;
 }
 
+.navbar-nav {
+  flex-direction: row;
+}
+
 .sub-menu {
   margin-right: 1em;
   margin-top: 2em;
