@@ -1,0 +1,58 @@
+[id^="fr-"],
+[id^="en-"],
+[id^="de-"] {
+  scroll-margin-top: 64px;
+}
+
+.bg-navy {
+  background-color: #1a1a33;
+}
+
+.bg-orange {
+  background-color: #ff6745;
+}
+
+.nav-link {
+  font-size: larger;
+}
+
+h1 {
+  font-size: x-large;
+}
+
+.btn-primary {
+  background-color: #ff6745;
+  border: 0;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:active:focus,
+.btn-primary:active:hover {
+  background-color: #ff6745d4 !important;
+}
+
+.sub-menu {
+  margin-right: 1em;
+  margin-top: 2em;
+}
+
+.sub-menu-title {
+  font-weight: 600;
+  margin-bottom: 3px;
+  color: #2a2a52;
+  font-size: larger;
+}
+
+.sub-menu a {
+  text-decoration: none;
+  margin-right: 1em;
+  padding: 4px 0;
+  color: #333;
+  font-size: medium;
+}
+
+.sub-menu a:hover {
+  color: #ff6745;
+}
