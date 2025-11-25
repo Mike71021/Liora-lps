@@ -1,7 +1,9 @@
-[id^="fr-"],
-[id^="en-"],
-[id^="de-"] {
-  scroll-margin-top: 64px;
+@media (min-width: 768px) {
+  [id^="fr-"],
+  [id^="en-"],
+  [id^="de-"] {
+    scroll-margin-top: 64px;
+  }
 }
 
 .bg-navy {
@@ -45,7 +47,7 @@ h1 {
 .sub-menu-title {
   font-weight: 600;
   margin-bottom: 3px;
-  color: #2a2a52;
+  color: #1a1a33;
   font-size: larger;
 }
 
@@ -53,7 +55,7 @@ h1 {
   text-decoration: none;
   margin-right: 1em;
   padding: 4px 0;
-  color: #333;
+  color: #373771;
   font-size: medium;
 }
 
