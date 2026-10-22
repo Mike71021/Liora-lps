@@ -110,14 +110,6 @@ h1 {
 .category-nav-title {
   display: none;
 }
-.category-filter-list {
-  flex-wrap: nowrap !important;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-.category-filter-list::-webkit-scrollbar {
-  display: none;
-}
 .category-filter-list > a {
   padding: 7px 13px;
   border: 1px solid #dedee8;
@@ -268,11 +260,6 @@ footer {
   .category-nav {
     position: static;
     backdrop-filter: none;
-  }
-  .category-filter-list {
-    flex-wrap: wrap !important;
-    overflow: visible;
-    padding-bottom: 0;
   }
   .category-section {
     grid-template-columns: 1fr;
