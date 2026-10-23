@@ -265,4 +265,7 @@ footer {
     grid-template-columns: 1fr;
     padding: 24px 0;
   }
+  .category-section .sub-menu + .sub-menu {
+    margin-top: 24px !important;
+  }
 }
