@@ -40,13 +40,13 @@
     <section class="container my-4">
         <div class="portal-intro d-grid align-items-center overflow-hidden border rounded-4 shadow-sm p-4">
             <div class="intro-copy">
-                <h2 class="mt-0 mb-1 fw-semibold">Landing pages Liora</h2>
-                <p class="text-muted mb-0">Recherchez ou filtrez les pages disponibles.</p>
+                <h2 id="introTitle" class="mt-0 mb-1 fw-semibold">Landing pages Liora</h2>
+                <p id="introDescription" class="text-muted mb-0">Recherchez ou filtrez les pages disponibles.</p>
             </div>
             <div class="intro-search">
                 <div class="search-wrap position-relative w-100 m-0">
                     <span class="search-icon position-absolute" aria-hidden="true">⌕</span>
-                    <label class="visually-hidden" for="pageSearch">Rechercher une landing page</label>
+                    <label id="searchLabel" class="visually-hidden" for="pageSearch">Rechercher une landing page</label>
                     <input id="pageSearch" class="form-control" type="search"
                         placeholder="Rechercher une page, une formation…" autocomplete="off" />
                 </div>
@@ -105,7 +105,7 @@
                             href="https://formation.liora.io/data-ia" title="Nos formations Data IA"
                             aria-label="Nos formations Data IA, version 1">V1</a>
                         <a class="version-link d-inline-flex w-auto m-0 fw-bold text-decoration-none" target="_blank"
-                            href="https://formation.liora.io/intelligence-artificielle-parcours"
+                            href="https://formation.liora.io/intelligence-artificielle"
                             title="Nos formations Data IA v.2" aria-label="Nos formations Data IA, version 2">V2</a>
                         <a class="version-link d-inline-flex w-auto m-0 fw-bold text-decoration-none" target="_blank"
                             href="https://formation.liora.io/intelligence-artificielle-data"
@@ -119,7 +119,7 @@
                     href="https://formation.liora.io/catalogue-des-formations-rebranding">Rebranding catalogue des
                     formations</a>
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
-                    href="https://formation.liora.io/catalogue-des-formations-ia">Catalogue
+                    href="https://formation.liora.io/catalogue-formations">Catalogue
                     des
                     formations IA</a>
             </div>
@@ -250,7 +250,7 @@
                     DevOps</a>
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none"
                     href="https://formation.liora.io/administrateur-systemes-reseaux-cloud">Administrateur
-                    Systemes Reseau & Cloud</a>
+                    Systemes Reseau &amp; Cloud</a>
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
                     href="https://formation.liora.io/software-engineer">Software
                     Engineer</a>
@@ -299,6 +299,8 @@
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
                     href="https://alternance.liora.io/ingenieur-ia">Ingenieur IA</a>
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
+                    href="https://alternance.liora.io/data-science-ai">Data Science &amp; AI</a>
+                <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
                     href="https://alternance.liora.io/data-engineer">Data
                     Engineer</a>
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
@@ -322,6 +324,10 @@
                     href="https://alternance.liora.io/product-builder-no-code">Product Builder no
                     code
                     AI</a>
+                <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
+                    href="https://alternance.liora.io/developpeur-no-code-ia">Développeur No-Code &amp; IA</a>
+                <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
+                    href="https://alternance.liora.io/marketing-digital-data-ia">Marketing Digital, Data &amp; IA</a>
             </div>
             <div class="sub-menu m-0">
                 <div class="sub-menu-title mb-2 fw-bold text-uppercase">Secondaire :</div>
@@ -397,7 +403,7 @@
                 <span class="category-domain fw-normal">Nom de domaine : poei.liora.io</span>
             </h3>
             <div class="sub-menu m-0">
-                <div class="sub-menu-title mb-2 fw-bold text-uppercase">Tech & IA :</div>
+                <div class="sub-menu-title mb-2 fw-bold text-uppercase">Tech &amp; IA :</div>
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
                     href="https://poei.liora.io/architecte-devops-data-kubernetes">Architecte DevOps Data
                     Kubernetes</a>
@@ -412,13 +418,13 @@
                     href="https://poei.liora.io/ingenieur-ia-lyon">Ingénieur IA à Lyon</a>
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
                     href="https://poei.liora.io/ingenieur-qa-automaticien-devops">Ingénieur QA —
-                    Automaticien & DevOps</a>
+                    Automaticien &amp; DevOps</a>
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
                     href="https://poei.liora.io/ingenieur-qa-test-logiciel-automation">Ingénieur QA /
                     Test Logiciel / Automation</a>
             </div>
             <div class="sub-menu m-0">
-                <div class="sub-menu-title mb-2 fw-bold text-uppercase">Conseil, finance & ERP :</div>
+                <div class="sub-menu-title mb-2 fw-bold text-uppercase">Conseil, finance &amp; ERP :</div>
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
                     href="https://poei.liora.io/consolideur-financier">Consolideur Financier</a>
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
@@ -431,7 +437,7 @@
                     href="https://poei.liora.io/consultant-sage-x3-supply">Consultant Sage X3 Supply
                     Chain</a>
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
-                    href="https://poei.liora.io/consultant-sap-abap">Consultant technique SAP ABAP & SAP
+                    href="https://poei.liora.io/consultant-sap-abap">Consultant technique SAP ABAP &amp; SAP
                     Data / IA</a>
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
                     href="https://poei.liora.io/consultant-sap-s4hana-achat-logistique">Consultant SAP S/4HANA
@@ -513,7 +519,7 @@
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
                     href="https://quiz.liora.io/testez-vos-competences">Testez vos compétences</a>
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
-                    href="https://quiz.liora.io/testez-vos-competences-data">Data & IA</a>
+                    href="https://quiz.liora.io/testez-vos-competences-data">Data &amp; IA</a>
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
                     href="https://quiz.liora.io/testez-vos-competences-cybersecurite">Cybersécurité</a>
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
@@ -524,7 +530,7 @@
             <div class="sub-menu m-0">
                 <div class="sub-menu-title mb-2 fw-bold text-uppercase">English :</div>
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
-                    href="https://quiz.liora.io/test-your-skills">Test your Data & AI skills</a>
+                    href="https://quiz.liora.io/test-your-skills">Test your Data &amp; AI skills</a>
             </div>
         </section>
 
@@ -557,7 +563,7 @@
                     <a class="d-inline-flex align-items-center flex-shrink-0 text-decoration-none"
                         data-category="en-dev" href="#en-dev">Dev</a>
                     <a class="d-inline-flex align-items-center flex-shrink-0 text-decoration-none"
-                        data-category="en-secondary" href="#en-secondary">Secondary</a>
+                        data-category="en-secondary" href="#en-secondary">Other pages</a>
                 </div>
             </div>
         </nav>
@@ -565,16 +571,17 @@
         <!-- Sections EN -->
         <section id="en-data" class="category-section w-100 m-0 py-4 border-bottom">
             <h3 class="category-title d-flex align-items-center gap-2 flex-wrap mt-0 mb-3 p-0 border-0 fw-bold">Data
-                <span class="category-domain fw-normal">Nom de domaine : courses.liora.io</span>
+                <span class="category-domain fw-normal">Domain: courses.liora.io</span>
             </h3>
             <div class="sub-menu m-0">
-                <div class="sub-menu-title mb-2 fw-bold text-uppercase">Genéral :</div>
+                <div class="sub-menu-title mb-2 fw-bold text-uppercase">General:</div>
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
-                    href="https://courses.liora.io/our-courses">Nos
-                    formations</a>
+                    href="https://courses.liora.io/our-courses">Our courses</a>
+                <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
+                    href="https://courses.liora.io/our-courses-rebranding">Our Courses — Rebranding</a>
             </div>
             <div class="sub-menu m-0">
-                <div class="sub-menu-title mb-2 fw-bold text-uppercase">Formations :</div>
+                <div class="sub-menu-title mb-2 fw-bold text-uppercase">Courses:</div>
                 <div
                     class="version-group d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-2">
                     <span class="version-group-name">Data Analyst</span>
@@ -601,7 +608,7 @@
                     href="https://courses.liora.io/machine-learning-engineer">Machine
                     Learning Engineer</a>
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
-                    href="https://courses.liora.io/data-marketing">Data Marketing &
+                    href="https://courses.liora.io/data-marketing">Data Marketing &amp;
                     AI</a>
             </div>
         </section>
@@ -609,10 +616,10 @@
 
         <section id="en-dev" class="category-section w-100 m-0 py-4 border-bottom">
             <h3 class="category-title d-flex align-items-center gap-2 flex-wrap mt-0 mb-3 p-0 border-0 fw-bold">Dev
-                <span class="category-domain fw-normal">Nom de domaine : courses.liora.io</span>
+                <span class="category-domain fw-normal">Domain: courses.liora.io</span>
             </h3>
             <div class="sub-menu m-0">
-                <div class="sub-menu-title mb-2 fw-bold text-uppercase">Formations :</div>
+                <div class="sub-menu-title mb-2 fw-bold text-uppercase">Courses:</div>
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
                     href="https://courses.liora.io/devops-engineer">DevOps
                     Engineer</a>
@@ -621,8 +628,12 @@
 
         <section id="en-secondary" class="category-section w-100 m-0 py-4 border-bottom">
             <h3 class="category-title d-flex align-items-center gap-2 flex-wrap mt-0 mb-3 p-0 border-0 fw-bold">
-                Secondary <span class="category-domain fw-normal">Nom de domaine : courses.liora.io</span></h3>
-
+                Other pages <span class="category-domain fw-normal">Domain: courses.liora.io</span></h3>
+            <div class="sub-menu m-0">
+                <div class="sub-menu-title mb-2 fw-bold text-uppercase">Other pages:</div>
+                <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
+                    href="https://courses.liora.io/start">Start</a>
+            </div>
         </section>
         <div class="no-results" hidden>No page matches this search.</div>
     </section>
@@ -640,7 +651,7 @@
                     <a class="d-inline-flex align-items-center flex-shrink-0 text-decoration-none"
                         data-category="de-dev" href="#de-dev">Dev</a>
                     <a class="d-inline-flex align-items-center flex-shrink-0 text-decoration-none"
-                        data-category="de-secondary" href="#de-secondary">Sekundar</a>
+                        data-category="de-secondary" href="#de-secondary">Weitere Seiten</a>
                 </div>
             </div>
         </nav>
@@ -648,16 +659,17 @@
         <!-- Sections DE -->
         <section id="de-data" class="category-section w-100 m-0 py-4 border-bottom">
             <h3 class="category-title d-flex align-items-center gap-2 flex-wrap mt-0 mb-3 p-0 border-0 fw-bold">Data
-                <span class="category-domain fw-normal">Nom de domaine : weiterbildung.liora.io</span>
+                <span class="category-domain fw-normal">Domain: weiterbildung.liora.io</span>
             </h3>
             <div class="sub-menu m-0">
-                <div class="sub-menu-title mb-2 fw-bold text-uppercase">Genéral :</div>
+                <div class="sub-menu-title mb-2 fw-bold text-uppercase">Allgemein:</div>
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
-                    href="https://weiterbildung.liora.io/unsere-weiterbildungen">Nos
-                    formations</a>
+                    href="https://weiterbildung.liora.io/unsere-weiterbildungen">Unsere Weiterbildungen</a>
+                <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
+                    href="https://weiterbildung.liora.io/unsere-weiterbildungen-rebranding">Unsere Weiterbildungen — Rebranding</a>
             </div>
             <div class="sub-menu m-0">
-                <div class="sub-menu-title mb-2 fw-bold text-uppercase">Formations :</div>
+                <div class="sub-menu-title mb-2 fw-bold text-uppercase">Weiterbildungen:</div>
                 <div
                     class="version-group d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-2">
                     <span class="version-group-name">Data Analyst</span>
@@ -688,17 +700,17 @@
                     Learning Engineer</a>
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
                     href="https://weiterbildung.liora.io/data-marketing-ki">Data
-                    Marketing &
+                    Marketing &amp;
                     KI</a>
             </div>
         </section>
 
         <section id="de-dev" class="category-section w-100 m-0 py-4 border-bottom">
             <h3 class="category-title d-flex align-items-center gap-2 flex-wrap mt-0 mb-3 p-0 border-0 fw-bold">Dev
-                <span class="category-domain fw-normal">Nom de domaine : weiterbildung.liora.io</span>
+                <span class="category-domain fw-normal">Domain: weiterbildung.liora.io</span>
             </h3>
             <div class="sub-menu m-0">
-                <div class="sub-menu-title mb-2 fw-bold text-uppercase">Formations :</div>
+                <div class="sub-menu-title mb-2 fw-bold text-uppercase">Weiterbildungen:</div>
                 <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
                     href="https://weiterbildung.liora.io/devops-engineer">DevOps
                     Engineer</a>
@@ -706,16 +718,20 @@
         </section>
 
         <section id="de-secondary" class="category-section w-100 m-0 py-4 border-bottom">
-            <h3 class="category-title d-flex align-items-center gap-2 flex-wrap mt-0 mb-3 p-0 border-0 fw-bold">Sekundar
-                <span class="category-domain fw-normal">Nom de domaine : weiterbildung.liora.io</span>
+            <h3 class="category-title d-flex align-items-center gap-2 flex-wrap mt-0 mb-3 p-0 border-0 fw-bold">Weitere Seiten
+                <span class="category-domain fw-normal">Domain: weiterbildung.liora.io</span>
             </h3>
-
+            <div class="sub-menu m-0">
+                <div class="sub-menu-title mb-2 fw-bold text-uppercase">Weitere Seiten:</div>
+                <a class="d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank"
+                    href="https://weiterbildung.liora.io/start">Start</a>
+            </div>
         </section>
         <div class="no-results" hidden>Keine Seite entspricht dieser Suche.</div>
     </section>
 
     <footer class="bg-navy py-3 mt-5">
-        <div class="container text-end text-white">
+        <div id="footerCopyright" class="container text-end text-white">
             © 2026 Liora — Tous droits réservés.
         </div>
     </footer>

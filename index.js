@@ -2,7 +2,56 @@ const languages = [...document.querySelectorAll('[data-language]')];
 const languageSections = [...document.querySelectorAll('.language-panel')];
 const searchInput = document.getElementById('pageSearch');
 const resultCount = document.getElementById('resultCount');
+const introTitle = document.getElementById('introTitle');
+const introDescription = document.getElementById('introDescription');
+const searchLabel = document.getElementById('searchLabel');
+const footerCopyright = document.getElementById('footerCopyright');
+const backToTopButton = document.getElementById('backToTop');
 let activeCategory = 'all';
+
+const translations = {
+    fr: {
+        introTitle: 'Landing pages Liora',
+        introDescription: 'Recherchez ou filtrez les pages disponibles.',
+        searchLabel: 'Rechercher une landing page',
+        searchPlaceholder: 'Rechercher une page, une formation…',
+        results: (count) => `${count} résultat${count === 1 ? '' : 's'}`,
+        available: (count) => `${count} page${count === 1 ? '' : 's'} disponible${count === 1 ? '' : 's'}`,
+        footer: '© 2026 Liora — Tous droits réservés.',
+        backToTop: 'Revenir en haut',
+    },
+    en: {
+        introTitle: 'Liora landing pages',
+        introDescription: 'Search or filter the available pages.',
+        searchLabel: 'Search for a landing page',
+        searchPlaceholder: 'Search for a page or course…',
+        results: (count) => `${count} result${count === 1 ? '' : 's'}`,
+        available: (count) => `${count} page${count === 1 ? '' : 's'} available`,
+        footer: '© 2026 Liora — All rights reserved.',
+        backToTop: 'Back to top',
+    },
+    de: {
+        introTitle: 'Liora Landingpages',
+        introDescription: 'Durchsuchen oder filtern Sie die verfügbaren Seiten.',
+        searchLabel: 'Nach einer Landingpage suchen',
+        searchPlaceholder: 'Nach einer Seite oder Weiterbildung suchen…',
+        results: (count) => `${count} Ergebnis${count === 1 ? '' : 'se'}`,
+        available: (count) => `${count} verfügbare Seite${count === 1 ? '' : 'n'}`,
+        footer: '© 2026 Liora — Alle Rechte vorbehalten.',
+        backToTop: 'Nach oben',
+    },
+};
+
+function translateInterface(code) {
+    const copy = translations[code];
+    document.documentElement.lang = code;
+    introTitle.textContent = copy.introTitle;
+    introDescription.textContent = copy.introDescription;
+    searchLabel.textContent = copy.searchLabel;
+    searchInput.placeholder = copy.searchPlaceholder;
+    footerCopyright.textContent = copy.footer;
+    backToTopButton.setAttribute('aria-label', copy.backToTop);
+}
 
 // Normalize text so searches are insensitive to case, accents and punctuation.
 const normalize = (value) => value
@@ -64,9 +113,10 @@ function filterPages() {
         button.classList.toggle('active', button.dataset.category === activeCategory);
     });
 
+    const copy = translations[current.id];
     resultCount.textContent = query
-        ? `${visibleLinks} résultat${visibleLinks > 1 ? 's' : ''}`
-        : `${visibleLinks} pages disponibles`;
+        ? copy.results(visibleLinks)
+        : copy.available(visibleLinks);
 
     const emptyState = current.querySelector('.no-results');
     emptyState.hidden = !(query && visibleLinks === 0);
@@ -83,6 +133,7 @@ function selectLanguage(code, updateHash = true) {
     });
     searchInput.value = '';
     activeCategory = 'all';
+    translateInterface(code);
     if (updateHash) history.replaceState(null, '', `#${code}`);
     filterPages();
 }
@@ -117,7 +168,6 @@ window.addEventListener('hashchange', () => {
     if (location.hash !== '#page-top') applyUrlFilter();
 });
 
-const backToTopButton = document.getElementById('backToTop');
 // Show the shortcut once the user has started scrolling down the page.
 window.addEventListener('scroll', () => {
     backToTopButton.hidden = window.scrollY <= 20;
